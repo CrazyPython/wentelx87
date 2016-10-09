@@ -15,7 +15,7 @@ Wentel consists of, at the basic level, a memory pointer and an instruction poin
 
 **`0100`** - increment current memory address
 
-**`0101`** - decrement \`    \`    \`    \`    \`
+**`0101`** - decrement current memory address
 
 **`0110`** - move memory pointer left
 
