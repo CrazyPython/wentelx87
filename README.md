@@ -6,7 +6,7 @@ then the virtual machine will look like this when started:
 ```
 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0010 0000 0101 0100 (memory)
                                                             ^                   (execution pointer)
-^                                                                               (memory)
+^                                                                               (memory pointer)
 ```
 
 
