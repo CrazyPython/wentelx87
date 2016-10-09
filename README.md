@@ -36,12 +36,13 @@ Invalid opcodes cause undefined behavior.
 
 ## Output
 
-Output is defined by special opcodes.
+Output is defined by special opcodes. All `1XXX` opcodes maniuplate external resources.
 
 **`1000`** - output `0`
+
 **`1001`** - output `1`
 
-All `1XXX` opcodes maniuplate external resources.  In this implementation of the Wentel Virtual Machine, 
+In this implementation of the Wentel Virtual Machine, 
 every 8 bits it will decode the last 8 bits and output them as ASCII. Escape characters are supported.
 
 ## Examples
