@@ -31,9 +31,21 @@ then the virtual machine will look like this when started:
 
 **`0111`** - move memory pointer right
 
-Invalid opcodes cause undefined behavior.
+
+Invalid opcodes cause undefined behavior. 
+
+## Output
+
+Output is defined by special opcodes.
+
+**`1000`** - output `0`
+**`1001`** - output `1`
+
+All `1XXX` opcodes maniuplate external resources.  In this implementation of the Wentel Virtual Machine, 
+every 8 bits it will decode the last 8 bits and output them as ASCII. Escape characters are supported.
 
 ## Examples
 *Spaces were added to help reading. The Wentel Virtual Machine does not accept spaces.*
 
 `0000 1111 1111 0000 1000` - this snippet will move the execution pointer to `0000 1000` if the curent value is equal to the value pointed to by `1111 1111`
+
