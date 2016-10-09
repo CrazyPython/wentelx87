@@ -36,7 +36,7 @@ Invalid opcodes cause undefined behavior.
 
 ## Output
 
-Output is defined by special opcodes. All `1XXX` opcodes maniuplate external resources.
+Output is defined by special opcodes. All **`1XXX`** opcodes maniuplate external resources.
 
 **`1000`** - output `0`
 
