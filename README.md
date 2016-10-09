@@ -2,7 +2,7 @@
 Wentel consists of, at the basic level, a memory pointer and an instruction pointer. Instructions are stored loaded into memory. The execution pointer moves to the right after executing the instruction at that memory pointer.
 
 The program is loaded into rightmost slot of memory. For example, if your program is `0010 0000 0101 0100`, 
-then the virtual machine will look like:
+then the virtual machine will look like this when started:
 ```
 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0010 0000 0101 0100 (memory)
                                                             ^                   (execution pointer)
