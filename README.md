@@ -36,6 +36,9 @@ Invalid opcodes cause undefined behavior.
 
 ## Output
 
+*Note:* Output is not a part of the barebones Wentel specification. Output is instead an 
+extension that exploits the unused opcodes in the barebones Wentel specification.
+
 Output is defined by special opcodes. All **`1XXX`** opcodes maniuplate external resources.
 
 **`1000`** - output `0`
