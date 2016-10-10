@@ -62,5 +62,5 @@ To make debugging mode more useful, change `2 ** 8` in the code to a smaller val
 ## Examples
 *Spaces were added to help reading. The Wentel Virtual Machine does not accept spaces.*
 
-`0000 1111 1111 0000 1000` - this snippet will move the execution pointer to `0000 1000` if the curent value is equal to the value pointed to by `1111 1111`
+`0001 1111 1111 0000 1000` - this snippet will move the execution pointer to `0000 1000` if the curent value is equal to the value pointed to by `1111 1111`
 
