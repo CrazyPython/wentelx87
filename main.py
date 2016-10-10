@@ -99,7 +99,8 @@ class WentelVirtualMachine(object):
               :150] + '\n' + ' ' * self.execution_pointer * 5 + '^' + '\n' + ' ' * 5 * self.memory_pointer + '^')
 
     def __init__(self):
-        self.memory = [0b0000] * 2 ** 4
+        self.memory = [0b0000] * 2 ** 8  # change to a smaller number for deubgging, 
+                                         # if you wish to see more useful debug output.
         self.memory_pointer = 0b00000000
         self.execution_pointer = 0b00000000
         self.opcodes = {
