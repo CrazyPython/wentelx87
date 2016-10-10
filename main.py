@@ -136,6 +136,7 @@ class WentelVirtualMachineWithOutput(WentelVirtualMachine):
     def _render_output(self):
         sys.stdout.write(binascii.unhexlify('%x' % int(self._buffer, 2)).decode('ascii'))
         sys.stdout.flush()
+        self._buffer = ''
 
     def _check_buffer(self):
         """If the buffer is ready to be rendered, render it."""
