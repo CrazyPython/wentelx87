@@ -15,11 +15,13 @@ then the virtual machine will look like this when started:
 
 *Note:* This Wentel Virtual Machine is 8 bit. That is, memory pointers are 8 bits long. Each memory register holds four bits of information. These instructions can be modified to adjust the memory table size.
 
+*Note 2:* "Word size" means the size of the memory address in bits. This implementation's word size is 8.
+
 **`0000`** - no-op
 
-**`0001`** - if the current address's value is equal to the value stored by the adress defined by the next 8 bits, move the execution pointer to the address pointed to by the ninth to the sixteenth bits after the current address.
+**`0001`** - if the current address's value is equal to the value stored by the adress defined by the next word, move the execution pointer to the address pointed to the next word after the word after the current address.
 
-**`0010`** - move memory pointer to address specified by next 8 bits
+**`0010`** - move memory pointer to address specified by next word.
 
 **`0011`** - deposit the current address of the execution pointer into the current memory address
 
