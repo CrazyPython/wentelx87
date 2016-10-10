@@ -48,6 +48,17 @@ Output is defined by special opcodes. All **`1XXX`** opcodes maniuplate external
 In this implementation of the Wentel Virtual Machine, 
 every 8 bits it will decode the last 8 bits and output them as ASCII. Escape characters are supported.
 
+## Usage 
+Run `python3 main.py`. The options are:
+
+- no options - will read instructions from stdin until linebreak
+- with file name - read instructions from file
+- `-d` - activate debugging mode, steps through memory, showing execution + memory pointers (don't forget `-i`)
+- `-i` - interactive mode - explicitly tell to read instructions from stdin. 
+
+To make debugging mode more useful, change `2 ** 8` in the code to a smaller value that still fits your program, like `2**5`. 
+
+
 ## Examples
 *Spaces were added to help reading. The Wentel Virtual Machine does not accept spaces.*
 
